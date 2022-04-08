@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#121213;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size:5rem;
+    color:white;
+}
+
+button{
+    margin-top:5rem;
+    border:none;
+    outline: none;
+    width:50%;
+    background-color: rgb(9, 77, 9);
+    color:rgb(255, 255, 255);
+    font-size:5rem;
+    transition:0.3s;
+    border-radius: 10px;
+    border: 1px solid rgb(69, 185, 69);
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:rgb(4, 119, 4)
+}

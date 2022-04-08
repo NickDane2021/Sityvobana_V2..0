@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>სიტყვობანა</title>
+    <meta name="title" content="სიტყვობანა" />
+    <meta
+      name="description"
+      content='თამაშის მიზანია გამოიცნო 6 ასოიანი სიტყვა
+    მაქსიმუმ 6 ცდაში, ყველა "გამოცნობა" უნდა იყოს ისეთი 6 ასოანი სიტყვა, რომელიც
+    ქართულ ენაში არსებობს'
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="სიტყვობანა" />
+    <meta
+      property="og:description"
+      content='თამაშის მიზანია გამოიცნო 6 ასოიანი
+    სიტყვა მაქსიმუმ 6 ცდაში, ყველა "გამოცნობა" უნდა იყოს ისეთი 6 ასოანი სიტყვა,
+    რომელიც ქართულ ენაში არსებობს'
+    />
+    <meta
+      property="og:image"
+      content="https://www.linkpicture.com/q/Banner_13.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <meta property="twitter:title" content="სიტყვობანა" />
+    <meta
+      property="twitter:description"
+      content='თამაშის მიზანია გამოიცნო 6
+    ასოიანი სიტყვა მაქსიმუმ 6 ცდაში, ყველა "გამოცნობა" უნდა იყოს ისეთი 6 ასოანი
+    სიტყვა, რომელიც ქართულ ენაში არსებობს'
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.linkpicture.com/q/Banner_13.png"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/d95d610dc3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="Favicon.png" />
+  </head>
+  <body>
+    <div class="about_game" id="about_game">
+      <div class="top_about">
+        <h1 class="about_title">თამაშის შესახებ</h1>
+        <i class="fa-solid fas fa fa-xmark xbutton" id="x_about"></i>
+      </div>
+      <div class="middle_about">
+        <p class="about_desc">
+          "სიტყვობანა" არის ონლაინ თამაშ Wordle-ის ქართული ვერსია
+        </p>
+        <br />
+        <p class="about_desc">
+          Wordle ეს არის New York Times-ის საკუთრება რომელიც 2013 წელს შეიქმნა,
+          პოპულარობა კი სულ რამდენიმე თვეა მოიპოვა, ახლა კი მას დღეში 300 000
+          მოთამაშე ჰყავს
+        </p>
+        <br />
+        <p class="about_desc">
+          "სიტყვობანაში" გამოყენებული ქართული სიტყვები :
+          <a
+            href="https://github.com/AleksandreSukh/GeorgianWordsDataBase"
+            target="_blank"
+            >AleksandreSukh</a
+          >
+        </p>
+        <br />
+        <p class="about_desc">
+          Wordle-ის თამაში :
+          <a
+            target="_blank"
+            href="https://www.nytimes.com/games/wordle/index.html"
+            >Wordle</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="rules" id="rules_div">
+      <div class="top_rules">
+        <h1 class="title">თამაშის წესები</h1>
+        <i class="fa-solid fas fa fa-xmark" id="Xgilaki"></i>
+      </div>
+      <div class="rules_desc">
+        <p class="rule">
+          <i class="fa-solid fas fa fa-genderless"> </i>თამაშის მიზანია
+          გამოიცნო დამალული 6 ასოიანი სიტყვა მაქსიმუმ 6 ცდაში
+        </p>
+        <br />
+        <p class="rule">
+          <i class="fa-solid fas fa fa-genderless"> </i>
+          ყველა "გამოცნობა" უნდა იყოს ისეთი 6 ასოანი სიტყვა, რომელიც ქართულ
+          ენაში არსებობს
+        </p>
+        <br />
+        <p class="rule">
+          <i class="fa-solid fas fa fa-genderless"> </i>სიტყვის დასადასტურებლად
+          დააჭირეთ Enter-ს
+        </p>
+        <br />
+        <p class="rule">
+          <i class="fa-solid fas fa fa-genderless"> </i>
+          თუ ასო <span style="color: green">გამწვანდა</span>, ესეიგი ეს ასო ზის
+          სწორ პოზიციაზე დამალულ სიტყვაში
+        </p>
+        <br />
+        <p class="rule">
+          <i class="fa-solid fas fa fa-genderless"> </i>
+          თუ ასო <span style="color: yellow">გაყვითლდა</span>, ესეიგი ეს ასო
+          არის დამალულ სიტყვაში, მაგრამ სხვა პოზიციაზე
+        </p>
+        <br />
+        <p class="rule">
+          <i class="fa-solid fas fa fa-genderless"> </i>
+          თუ ასომ ფერი არ შეიცვალა, ესეიგი ეს ასო არ არის დამალულ სიტყვაში
+        </p>
+        <br />
+        <p class="rule">
+          <i class="fa-solid fas fa fa-genderless"> </i>
+          ყველა ადამიანს ყოველ დღე უწევს ერთიდაიგივე სიტყვის გამოცნობა, ყოველ 24
+          საათში კი ეს სიტყვა იცვლება სხვა სიტყვით
+        </p>
+      </div>
+    </div>
+    <div class="contact" id="contact_div">
+      <div class="top_contact">
+        <h1 class="contact_title">კონტაქტი</h1>
+        <i class="fa-solid fas fa fa-xmark xbutton" id="Xcontact"></i>
+      </div>
+      <div class="middle_contact">
+        <div class="email">
+          <i class="fa-solid fas fa fa-envelope emaill"></i>
+          <p class="protonmail">sityvobana@protonmail.com</p>
+        </div>
+        <div class="discord">
+          <i class="fa-brands fab fa-discord discordd"></i>
+          <p class="badonix">BADONIX.js#7904</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="report" id="report">
+      <form
+        target="_blank"
+        action="https://formsubmit.co/c3a57c38b5bf4d333281291732cf713c"
+        method="POST"
+      >
+        <div class="top_report">
+          <h1 class="report_title">შეცდომის დაფიქსირება</h1>
+          <i class="fa-solid fas fa fa-xmark xbutton report_x" id="report_x"
+            ></i
+          >
+        </div>
+        <input type="hidden" name="_captcha" value="false" />
+
+        <div class="middle_report">
+          <p class="p_report">
+            აქ შეგიძლიათ დააფიქსიროთ რაიმე შეცდომა თამაშში, მაგალითად თამაშში
+            რომელიმე სიტყვის არ არსებობა
+          </p>
+          <input
+            name="name"
+            id="name"
+            type="text"
+            class="input_problem"
+            placeholder="პრობლემის მოკლე აღწერა"
+          />
+
+          <textarea
+            name="message"
+            id="message"
+            class="input_detail"
+            placeholder="პრობლემის დეტალური აღწერა"
+            style="width: 80%"
+          ></textarea>
+          <button class="submit" type="submit" id="submitReport">
+            დაფიქსირება
+          </button>
+        </div>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://sityvobana.netlify.app/thankyou.html"
+        />
+      </form>
+    </div>
+    <div class="statistics" id="stats_div">
+      <div class="top_stats">
+        <h1 class="stats_title">სტატისტიკა</h1>
+        <i class="fa-solid fas fa fa-xmark xbutton" id="xstats"></i>
+      </div>
+      <div class="middle_stats">
+        <p class="todaysWord" id="todaysWord">დღევანდელი სიტყვა იყო "შაურმა"</p>
+        <div class="results">
+          <div class="wins">
+            <p class="winNum" id="winsDiv">2</p>
+            <p class="win">მოგება</p>
+          </div>
+          <div class="loses">
+            <p class="loseNum" id="losesDiv">1</p>
+            <p class="lose">წაგება</p>
+          </div>
+          <div class="percents">
+            <p class="percentNum" id="percentDiv">0.6</p>
+            <p class="percent">მოგება %</p>
+          </div>
+        </div>
+        <button class="copy" id="copyBtn">შედეგის დაკოპირება</button>
+      </div>
+    </div>
+
+    <div class="top">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" class="togleri" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="#" id="about_button"><li>თამაშის შესახებ</li></a>
+            <a href="#" id="rules_button"><li>თამაშის წესები</li></a>
+            <a href="#" id="stats_button"><li>სტატისტიკა</li></a>
+            <a href="#" id="report_button"><li>შეცდომის დაფიქსირება</li></a>
+            <a href="#" id="contact_button"><li>კონტაქტი</li></a>
+          </ul>
+        </div>
+      </nav>
+
+      <img src="Logo.png" class="logo" />
+
+      <div class="left">
+        <p id="timer"></p>
+      </div>
+    </div>
+    <div class="center">
+      <div class="alert-container" data-alert-container></div>
+      <div class="guess-grid" data-guess-grid>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+      </div>
+    </div>
+
+    <div data-keyboard class="keyboard">
+      <button class="key" data-key="ქ">ქ</button>
+      <button class="key" data-key="წ">წ</button>
+      <button class="key" data-key="ჭ">ჭ</button>
+      <button class="key" data-key="ე">ე</button>
+      <button class="key" data-key="რ">რ</button>
+      <button class="key" data-key="ღ">ღ</button>
+      <button class="key" data-key="ტ">ტ</button>
+      <button class="key" data-key="თ">თ</button>
+      <button class="key" data-key="ყ">ყ</button>
+      <button class="key" data-key="უ">უ</button>
+      <button class="key" data-key="ი">ი</button>
+      <button class="key" data-key="ო">ო</button>
+      <button class="key" data-key="პ">პ</button>
+      <div class="space"></div>
+      <button class="key" data-key="ა">ა</button>
+      <button class="key" data-key="ს">ს</button>
+      <button class="key" data-key="შ">შ</button>
+      <button class="key" data-key="დ">დ</button>
+      <button class="key" data-key="ფ">ფ</button>
+      <button class="key" data-key="გ">გ</button>
+      <button class="key" data-key="ჰ">ჰ</button>
+      <button class="key" data-key="ჯ">ჯ</button>
+      <button class="key" data-key="ჟ">ჟ</button>
+      <button class="key" data-key="კ">კ</button>
+      <button class="key" data-key="ლ">ლ</button>
+      <div class="space"></div>
+      <div class="space"></div>
+      <button class="key large" data-enter>Enter</button>
+      <button class="key" data-key="ზ">ზ</button>
+      <button class="key" data-key="ძ">ძ</button>
+      <button class="key" data-key="ხ">ხ</button>
+      <button class="key" data-key="ც">ც</button>
+      <button class="key" data-key="ჩ">ჩ</button>
+      <button class="key" data-key="ვ">ვ</button>
+      <button class="key" data-key="ბ">ბ</button>
+      <button class="key" data-key="ნ">ნ</button>
+      <button class="key" data-key="მ">მ</button>
+      <button class="key large" data-delete>
+        <svg
+          data-delete
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            fill="var(--color-tone-1)"
+            d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7p2v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
